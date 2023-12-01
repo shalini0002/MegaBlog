@@ -21,10 +21,10 @@ function App() {
     })
     .finally(() => setLoading(false))
   }, [])
-  
+
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
-      <div className='w-full block'>
+    <div style={{ backgroundColor: 'rgb(159 215 250/var(--tw-bg-opacity))' }}  className='min-h-screen flex flex-wrap rounded-[28px] content-between'>
+      <div className='w-full block relative'>
         <Header />
         <main>
         <Outlet />
